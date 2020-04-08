@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_expense_app/widgets/new_transaction.dart';
+
 
 import './widgets/new_transaction.dart';
 import './models/transaction.dart';
@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+       home: Directionality( // add this
+        textDirection: TextDirection.ltr, // set this property 
+        child: MyHomePage(),
+      ),
       title: 'Personal Expenses',
       theme: ThemeData(
         primarySwatch: Colors.green,
@@ -33,7 +37,6 @@ class MyApp extends StatelessWidget {
               ),
         ),
       ),
-      home: new MyHomePage(),
     );
   }
 }
