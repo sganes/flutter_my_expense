@@ -4,7 +4,7 @@ import 'package:flutter_driver/flutter_driver.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('Meals App', () {
+  group('Expense App', () {
     FlutterDriver driver;
 
     // Connect to the Flutter driver before running any tests.
